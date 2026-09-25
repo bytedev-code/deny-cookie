@@ -1,10 +1,11 @@
-import { Paper, Stack } from '@mui/material';
+import { Paper, Slide, Stack } from '@mui/material';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
 export default function CookieBanner() {
   return (
+    <Slide direction="up" in appear timeout={500}>
     <Paper
       elevation={6}
       sx={{
@@ -29,6 +30,7 @@ export default function CookieBanner() {
         </Stack>
       </Stack>
     </Paper>
+    </Slide>
   );
 
 }
